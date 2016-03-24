@@ -1,0 +1,53 @@
+.wrapper {
+  background-color: #000;
+  padding: 20px; }
+
+.play {
+  height: 300px;
+  width: 300px;
+  margin: 60px auto;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer; }
+  .play span {
+    display: block; }
+  .play .span1, .play .span2 {
+    height: 100%;
+    width: 36%;
+    transition: all 0.25s ease;
+    background-color: #fff;
+    overflow: hidden; }
+  .play .span1 {
+    float: left; }
+  .play .span2 {
+    float: right; }
+  .play .span3 {
+    transform: translate(0, -100%); }
+  .play .span4 {
+    transform: translate(0, 100%); }
+  .play .span3,
+  .play .span4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    border-right: 300px solid #000;
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    transition: transform 0.25s ease; }
+
+.pause .span1 {
+  width: 50%; }
+
+.pause .span2 {
+  width: 50%; }
+
+.pause .span3 {
+  transform: translate(0, -50%); }
+
+.pause .span4 {
+  transform: translate(0, 50%); }
+
+/*# sourceMappingURL=style.css.map */

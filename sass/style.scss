@@ -1,11 +1,13 @@
 .wrapper{
-	background-color: #000;
+	background-color: #E22222;
 	padding: 20px;
+  width: 305px;
+  margin: 20% auto;
 }
 
 .play{
-	height: 300px;
-  width: 300px;
+	height: 50px;
+  width: 50px;
   margin: 60px auto;
   overflow: hidden;
   position: relative;
@@ -37,9 +39,9 @@
   background-color: transparent;
   width: 0;
   height: 0;
-  border-right: 300px solid #000;
-  border-top: 150px solid transparent;
-  border-bottom: 150px solid transparent;
+  border-right: 50px solid #E22222;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
   transition: transform 0.25s ease;
 }
 }

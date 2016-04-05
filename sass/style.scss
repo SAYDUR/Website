@@ -2,7 +2,7 @@
 	background-color: #E22222;
 	padding: 20px;
   width: 305px;
-  margin: 20% auto;
+  margin: 50px auto;
 }
 
 .play{
@@ -50,3 +50,38 @@
 .pause {.span2{width: 50%;}}
 .pause {.span3 {transform: translate(0, -50%);}}
 .pause {.span4{transform: translate(0, 50%);}}
+
+
+
+
+
+
+
+body{background: black;}
+
+
+.button{
+  width: 50px;
+	height: 50px;
+	background: #000000;
+	margin: 0 auto;
+	cursor: pointer;
+	transition: all 0.5s ease;
+
+	.s1{
+		display: block;
+		background: #FFFFFF;
+		width:50px;
+		height: 50px;
+		transition: all 0.3s ease;
+
+		-webkit-clip-path: polygon(100% 0, 100% 36%, 100% 100%, 64% 100%, 63% 0, 35% 0, 35% 100%, 0 100%, 0% 35%, 0 0);
+clip-path: polygon(100% 0, 100% 36%, 100% 100%, 64% 100%, 63% 0, 35% 0, 35% 100%, 0 100%, 0% 35%, 0 0);
+	}
+
+	&:hover .s1{
+		-webkit-clip-path: polygon(100% 53%, 100% 0, 100% 53%, 46% 78%, 46% 24%, 46% 24%, 46% 78%, 0 100%, 0% 35%, 0 0);
+		clip-path: polygon(100% 53%, 100% 0, 100% 53%, 46% 78%, 46% 24%, 46% 24%, 46% 78%, 0 100%, 0% 35%, 0 0);
+	}
+
+}

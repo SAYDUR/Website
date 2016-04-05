@@ -66,7 +66,6 @@ body{background: black;}
 	background: #000000;
 	margin: 0 auto;
 	cursor: pointer;
-	transition: all 0.5s ease;
 
 	.s1{
 		display: block;
@@ -75,13 +74,13 @@ body{background: black;}
 		height: 50px;
 		transition: all 0.3s ease;
 
-		-webkit-clip-path: polygon(100% 0, 100% 36%, 100% 100%, 64% 100%, 63% 0, 35% 0, 35% 100%, 0 100%, 0% 35%, 0 0);
-clip-path: polygon(100% 0, 100% 36%, 100% 100%, 64% 100%, 63% 0, 35% 0, 35% 100%, 0 100%, 0% 35%, 0 0);
+		-webkit-clip-path: polygon(100% 0, 100% 100%, 66% 100%, 66% 0, 35% 0, 35% 100%, 0 100%, 0 0);
+		clip-path: polygon(100% 0, 100% 100%, 66% 100%, 66% 0, 35% 0, 35% 100%, 0 100%, 0 0);
 	}
 
 	&:hover .s1{
-		-webkit-clip-path: polygon(100% 53%, 100% 0, 100% 53%, 46% 78%, 46% 24%, 46% 24%, 46% 78%, 0 100%, 0% 35%, 0 0);
-		clip-path: polygon(100% 53%, 100% 0, 100% 53%, 46% 78%, 46% 24%, 46% 24%, 46% 78%, 0 100%, 0% 35%, 0 0);
+		-webkit-clip-path: polygon(100% 54%, 100% 54%, 55% 76%, 55% 31%, 55% 31%, 55% 76%, 0 100%, 0 0);
+		clip-path: polygon(100% 54%, 100% 54%, 55% 76%, 55% 31%, 55% 31%, 55% 76%, 0 100%, 0 0);
 	}
 
 }

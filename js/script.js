@@ -4,4 +4,8 @@ $(document).ready(function(){
 		$(this).toggleClass('pause');
 	});
 
+	$('.button').click(function(){
+		$(this).toggleClass('play');
+	});
+
 });

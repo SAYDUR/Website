@@ -7,12 +7,14 @@ body {
   width: 1440px;
   margin: 0 auto; }
 
+.mid-width {
+  width: 940px;
+  margin: 0 auto; }
+
 .header .top-bar-wrap {
   background: #ebebeb;
   padding: 10px 0; }
   .header .top-bar-wrap .top-bar {
-    width: 940px;
-    margin: 0 auto;
     overflow: hidden; }
     .header .top-bar-wrap .top-bar .search, .header .top-bar-wrap .top-bar .social {
       display: inline-block;
@@ -29,29 +31,106 @@ body {
         display: inline-block; }
       .header .top-bar-wrap .top-bar .social .last {
         margin-right: 0; }
-.header .nav {
-  width: 940px;
-  margin: 0 auto; }
+.header .nav .logo {
+  float: left;
+  padding: 2px 0; }
+.header .nav ul {
+  float: right;
+  margin: 0; }
+  .header .nav ul li {
+    list-style: none;
+    float: left; }
+    .header .nav ul li a {
+      padding: 36px 0;
+      margin: 0 22px;
+      display: inline-block;
+      color: #606060;
+      text-shadow: 1px 0px #E2E2E2;
+      text-decoration: none; }
+      .header .nav ul li a.last {
+        margin-right: 0; }
+      .header .nav ul li a:hover {
+        color: #034ea2;
+        box-shadow: 0px -2px 0px #034ea2; }
+.header .nav .burger {
+  width: 34px;
+  margin: 25px 0;
+  height: 45px;
+  position: relative;
+  cursor: pointer;
+  float: right;
+  display: none; }
+  .header .nav .burger span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 34px;
+    background: #034ea2;
+    border-radius: 9px;
+    opacity: 1;
+    right: 0;
+    transition: .25s ease-in-out; }
+  .header .nav .burger .span1 {
+    top: 8px; }
+  .header .nav .burger .span2 {
+    top: 18px; }
+  .header .nav .burger .span3 {
+    top: 18px; }
+  .header .nav .burger .span4 {
+    top: 28px; }
+.header .nav .cross .span1 {
+  top: 18px;
+  width: 0;
+  right: 50%; }
+.header .nav .cross .span4 {
+  top: 18px;
+  width: 0;
+  right: 50%; }
+.header .nav .cross .span2 {
+  transform: rotate(45deg); }
+.header .nav .cross .span3 {
+  transform: rotate(-45deg); }
+
+@media only screen and (max-width: 1440px) {
+  .wrap {
+    width: 100%; } }
+@media only screen and (max-width: 940px) {
+  .mid-width {
+    width: 100%; }
+
+  .header .top-bar-wrap .top-bar .social {
+    padding: 0 10px; }
+
+  .header .top-bar-wrap .top-bar .search {
+    padding: 0 10px; }
+
   .header .nav .logo {
-    float: left;
-    padding: 2px 0; }
+    padding: 2px 10px; }
+
+  .header .nav .burger {
+    display: block;
+    right: 10px; }
+
   .header .nav ul {
-    float: right;
-    margin: 0; }
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    background: #ebebeb; }
     .header .nav ul li {
-      list-style: none;
-      float: left; }
+      display: block;
+      float: none;
+      width: 100%;
+      background: #ebebeb; }
       .header .nav ul li a {
-        padding: 36px 0;
-        margin: 0 22px;
-        display: inline-block;
-        color: #606060;
-        text-shadow: 1px 0px #E2E2E2;
-        text-decoration: none; }
-        .header .nav ul li a.last {
-          margin-right: 0; }
-        .header .nav ul li a:hover {
-          color: #034ea2;
-          box-shadow: 0px -2px 0px #034ea2; }
+        padding: 15px 10px;
+        margin: 0;
+        display: block;
+        border-bottom: 1px solid #606060; }
+  .header .nav .open {
+    border-top: 5px solid #034ea2;
+    height: 250px; } }
 
 /*# sourceMappingURL=style.css.map */

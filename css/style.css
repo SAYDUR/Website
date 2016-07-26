@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: roboto; }
+  font-family: roboto;
+  background: #1a1a1a; }
 
 .last {
   margin: 0;
@@ -10,11 +11,7 @@ body {
 .clear {
   clear: both; }
 
-.wrap {
-  width: 1440px;
-  margin: 0 auto; }
-
-.mid-width {
+.mid-width, .allwrap {
   width: 940px;
   margin: 0 auto; }
 
@@ -139,61 +136,122 @@ body {
   .header .nav .open {
     border-top: 5px solid #034ea2;
     height: 250px; } }
-.slider-wrap {
-  height: 460px;
-  position: relative; }
-  .slider-wrap .slider {
-    margin: 20px auto;
-    width: 100%;
-    height: 460px;
-    overflow: hidden;
-    position: absolute; }
-    .slider-wrap .slider .slide {
-      width: 100%;
-      height: 460px;
-      float: left;
-      display: none; }
-      .slider-wrap .slider .slide img {
-        width: 100%; }
-  .slider-wrap .prev, .slider-wrap .next {
-    position: absolute;
-    top: 50%;
-    margin-top: -31.5px; }
-  .slider-wrap a.prev {
-    left: 0; }
-  .slider-wrap a.next {
-    right: 0; }
+.allwrap {
+  text-align: center;
+  margin-top: 250px; }
+  .allwrap .button {
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 32px;
+    margin: 0 auto;
+    line-height: 32px;
+    border-radius: 2px;
+    font-size: 0.9em;
+    background-color: #fff;
+    color: #646464;
+    cursor: pointer;
+    text-align: center; }
+  .allwrap .button > paper-ripple {
+    border-radius: 2px;
+    overflow: hidden; }
+  .allwrap .button.blue {
+    background-color: #4285f4;
+    color: #fff; }
 
-.raw h1 {
-  padding: 10px 0;
-  margin: 30px 0 0 0;
-  font-weight: 100;
-  color: #034ea2; }
-.raw .box {
+input.theme {
+  width: 120px;
+  height: 32px;
+  margin: 0 auto;
+  line-height: 32px;
+  border-radius: 2px;
+  border: 0;
+  font-size: 0.9em;
+  background-color: #4285f4;
+  color: #fff;
+  cursor: pointer; }
+
+input.theme2 {
+  background-color: red; }
+
+body.theme2 {
+  background: darkgray; }
+
+.btn {
   position: relative;
-  width: 220px;
-  height: 300px;
+  cursor: pointer;
+  margin: 30px auto;
+  padding: 0;
+  overflow: hidden;
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  background-color: #2ecc71;
+  color: #ecf0f1;
+  transition: background-color .3s; }
+
+.btn:hover, .btn:focus {
+  background-color: #27ae60; }
+
+.btn > * {
+  position: relative; }
+
+.btn span {
+  display: block;
+  padding: 12px 50px; }
+
+.wrap {
+  width: 1080px;
+  margin: 0 auto;
+  text-align: center; }
+
+.box {
+  width: 40%;
+  height: 200px;
   display: inline-block;
-  padding: 0 5px; }
-  .raw .box img, .raw .box h2.title, .raw .box .text-wrap, .raw .box .more {
-    position: absolute; }
-  .raw .box h2.title {
-    margin: 0;
-    z-index: 10;
-    color: white;
-    background: rgba(3, 78, 162, 0.65);
-    width: 90%;
-    font-size: 20px;
-    font-weight: 100;
-    padding: 5px 5%; }
-  .raw .box img {
-    width: 100%;
-    height: 135px;
-    top: 0; }
-  .raw .box .text-wrap, .raw .box .more {
-    bottom: 0; }
-  .raw .box .text-wrap h3 {
-    color: #034ea2;
-    font-weight: 400; }
+  background-color: white;
+  margin: 25px 15px;
+  border-radius: 5px; }
+
+.box h3 {
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 60px;
+  color: #fff; }
+
+.box1 {
+  background-color: #EBA39E; }
+
+.box2 {
+  background-color: #EDE89A; }
+
+.box3 {
+  background-color: #9EEBA1; }
+
+.box4 {
+  background-color: #9EEBBF; }
+
+.box5 {
+  background-color: #9ED9EB; }
+
+.box6 {
+  background-color: #9EB3EB; }
+
+.box7 {
+  background-color: #DB9EEB; }
+
+.box8 {
+  background-color: #C49EEB; }
+
+/*****************************************************************dashed border
+****************************************************************/
+.shadow1 h3, .shadow2 h3, .shadow3 h3, .shadow4 h3, .shadow5 h3, .shadow6 h3, .shadow7 h3, .shadow8 h3 {
+  width: 87%;
+  height: 100px;
+  margin-left: 6%;
+  border: 2px dashed #F7EEEE;
+  border-radius: 5px; }
 
 /*# sourceMappingURL=style.css.map */
